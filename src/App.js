@@ -107,7 +107,6 @@ function App() {
     setIsSendingData(true);
     try {
       const response = await fetch('https://b2b-n0r5.onrender.com/users/', {
-        mode: "no-cors",
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -2,7 +2,7 @@
   "name": "front",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://b2b-n0r5.onrender.com/",
+  "proxy": "http://localhost:3333/",
   "homepage": "https://eimsvietnam.github.io/form/",
   "dependencies": {
     "@chakra-ui/react": "^2.8.2",
