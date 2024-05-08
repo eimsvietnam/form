@@ -46,7 +46,7 @@ function App() {
   useEffect(() => {
     async function fetchExhibitions() {
       try {
-        const response = await fetch('https://b2b-n0r5.onrender.com/users/exhibition');
+        const response = await fetch('/users/exhibition');
         const data = await response.json();
         if (data.success) {
           setExhibitions(data.data);
@@ -106,7 +106,7 @@ function App() {
   const handleSubmit = async () => {
     setIsSendingData(true);
     try {
-      const response = await fetch('https://b2b-n0r5.onrender.com/users/', {
+      const response = await fetch('/users/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -121,6 +121,7 @@ function App() {
         }),
       });
       const data = await response.json();
+      console.log(response);
       if (data.success) {
         setAlertData({
           title: "Success!",
